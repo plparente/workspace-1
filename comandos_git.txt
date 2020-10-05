@@ -1,0 +1,38 @@
+
+
+
+https://github.com/vncrdo/workspace.git
+
+echo "# workspace" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/vncrdo/workspace.git
+git push -u origin main
+
+
+git remote add origin https://github.com/vncrdo/workspace.git
+git branch -M main
+git push -u origin main
+
+
+
+git clone https://github.com/vncrdo/workspace
+ git config --global user.name "Vinicius"
+ 
+ git config --global user.email "vncrdo@gmail.com"
+ 
+ git status // arquivos em vermelho ainda não rastreados
+ 
+ git add . // adcionar todos arquivos para rastrear 
+ 
+ git status // verificar todos os arquivos que em verde
+ 
+ git commit -m "Criacao da Workspace"
+ 
+ git status // verificar que não existe mais pendencia de commit
+ 
+ git push // sera solictado usuario e senha
+ 
+ git pull // entrar no diretorio botão diretio git bash 
