@@ -1,0 +1,14 @@
+package variaveis;
+
+import javax.swing.JOptionPane;
+
+public class AreaTrianguloCirculo {
+
+	public static void main(String[] args) {
+		int base = Integer.parseInt(JOptionPane.showInputDialog("Digite a Base:"));
+		int altura = Integer.parseInt(JOptionPane.showInputDialog("Digite a Altura:"));
+		
+		System.out.println("Area do triangulo: " + base * altura);
+	}
+
+}

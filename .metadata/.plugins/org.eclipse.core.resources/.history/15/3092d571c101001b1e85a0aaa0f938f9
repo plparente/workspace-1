@@ -1,0 +1,17 @@
+package variaveis;
+
+import javax.swing.JOptionPane;
+
+public class ManipulacaoString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String email = JOptionPane.showInputDialog("Email");
+		System.out.println("Original: " + email);
+		System.out.println("Minuscula: " + email.toLowerCase());
+		System.out.println("Maiuscula: " + email.toUpperCase());
+		System.out.println("Posição do @: " + email.indexOf("@"));
+		System.out.println("Existe @: " + email.contains("@"));
+	}
+
+}

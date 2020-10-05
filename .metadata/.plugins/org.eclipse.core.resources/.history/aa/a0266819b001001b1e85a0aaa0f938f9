@@ -1,0 +1,25 @@
+package variaveis;
+
+public class Itau {
+	public static void main(String[] args) {
+
+	String variavel = "hello worLD ";
+	System.out.println("Original: " + variavel);
+	System.out.println (" Maiúscula: " + variavel.toUpperCase());
+	System.out.println (" Minúscula: " + variavel.toLowerCase());
+	System.out.println (" Qtde de caracteres: " + variavel.length());
+	
+	String nome = "";
+	int idade = 0;
+	double altura = 0;
+	
+	nome = "Vinicius Rodrigues\n";
+	idade = 37;
+	altura = 1.70;
+
+	System.out.println(nome);
+	System.out.println(idade);
+	System.out.println(altura);
+	
+	}
+}

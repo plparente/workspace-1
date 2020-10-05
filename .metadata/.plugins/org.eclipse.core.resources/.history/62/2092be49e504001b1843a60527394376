@@ -1,0 +1,10 @@
+package br.com.universidade.modelo;
+
+public class Curso {
+
+	private Formacao formacao;
+	private String sigla;
+	private String dataLancamento;
+	
+	
+}

@@ -1,0 +1,11 @@
+package br.com.lojauati.teste;
+
+import br.com.lojauati.modelo.Formula1; // atalho para iportar Ctrl+Shift+o
+
+public class Formula1Teste {
+
+	public static void main(String[] args) {
+		Formula1 objeto;
+	}
+
+}

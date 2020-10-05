@@ -1,0 +1,14 @@
+package br.com.lojauati.teste;
+
+import br.com.lojauati.modelo.Elevador;
+
+public class TesteElevador {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Elevador objeto = new Elevador();
+		System.out.println(objeto.exibirTudo());
+		
+	}
+
+}

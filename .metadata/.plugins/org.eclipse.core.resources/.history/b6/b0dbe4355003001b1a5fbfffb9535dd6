@@ -1,0 +1,29 @@
+package br.com.lojauati.modelo;
+
+public class Formula1 {
+	private String escuderia = "";
+	private float valor = 0;
+	private int rpm = 0;
+	
+	//Sintaxe para criação de metodos no java
+	// <modificador> <tipo do retorno> (<tipo do paramentro>) {...}
+	// metodo recebe um parametro que esta vindo do package Formula1teste.java
+	public void preencherEscuderia(String parametro) {
+		escuderia = parametro.toUpperCase();
+		
+	}
+	//metodo para retornar a escuderia
+	public String exibirEscuderia() {
+		return escuderia;
+	}
+	public void preencherValor(float valorLoja) {
+		valor = valorLoja;
+		
+	}
+	public float exibirValor() {
+		return valor;
+		
+	}
+	
+	
+}

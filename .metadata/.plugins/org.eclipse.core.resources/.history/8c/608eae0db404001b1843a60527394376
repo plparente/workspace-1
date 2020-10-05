@@ -1,0 +1,42 @@
+package br.com.ecommerce.implementacao;
+
+import br.com.ecommerce.beans.ClienteProfessor;
+import br.com.ecommerce.beans.EnderecoProfessor;
+import br.com.ecommerce.beans.ProdutoProfessor;
+import br.com.ecommerce.beans.VendasProfessor;
+
+public class ImplementarVenda {
+
+	public static void main(String[] args) {
+		VendasProfessor venda = new VendasProfessor();
+		ClienteProfessor cliente = new ClienteProfessor();
+		EnderecoProfessor endereco = new EnderecoProfessor();
+		ProdutoProfessor produto = new ProdutoProfessor();
+		
+	/*	
+		//faz a amarração(ligação)
+		cliente.setEndereco(endereco);
+		venda.setProduto(produto);
+		venda.setCliente(cliente);
+		// fim da amarração
+		endereco.setBairro("CENTRO");
+		endereco.setLogradouro("AV PAULISTA");
+		//preencheria todos de endereco
+		cliente.setId(1);
+		cliente.setNome("CARLA");
+		produto.setDescricao("CHURROS");
+		produto.setQtde(10);
+		produto.setValorVenda(15);
+		// preencheria todos de produto
+		venda.setTotal(150);
+		venda.setData("02/10/2020");
+		venda.setNotafiscal(15);
+		System.out.println(venda.getAll());
+*/
+	}
+
+
+
+}
+
+

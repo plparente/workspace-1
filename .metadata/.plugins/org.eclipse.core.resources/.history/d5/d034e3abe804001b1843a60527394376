@@ -1,0 +1,9 @@
+package br.com.universidade.modelo;
+
+public class Bacharelado extends Formacao{
+	private String projetoConclusao;
+	private int cargaHorariaEstagio;
+	
+	
+	
+}

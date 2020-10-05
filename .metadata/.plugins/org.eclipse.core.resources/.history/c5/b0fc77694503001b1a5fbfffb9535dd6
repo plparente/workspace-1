@@ -1,0 +1,10 @@
+package br.com.lojauati.teste;
+
+public class Formula1Teste {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

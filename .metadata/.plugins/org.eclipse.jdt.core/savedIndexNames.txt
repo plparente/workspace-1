@@ -1,0 +1,7 @@
+INDEX VERSION 1.131+C:\Users\vncrd\OneDrive\Desktop\turma9c\.metadata\.plugins\org.eclipse.jdt.core
+1306100210.index
+2186076714.index
+3073698190.index
+2290215115.index
+4011968834.index
+4246196628.index
