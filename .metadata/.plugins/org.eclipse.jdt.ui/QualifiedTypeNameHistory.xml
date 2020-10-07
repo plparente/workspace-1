@@ -6,4 +6,9 @@
     <fullyQualifiedTypeName name="br.com.ecommerce.tela.Magica"/>
     <fullyQualifiedTypeName name="br.com.universidade.tela.Magica"/>
     <fullyQualifiedTypeName name="br.com.universidade.modelo.Bacharelado"/>
+    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
+    <fullyQualifiedTypeName name="javax.persistence.Table"/>
+    <fullyQualifiedTypeName name="javax.persistence.Id"/>
+    <fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>
