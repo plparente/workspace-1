@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.integracao.dao.ArtistaDAO;
 import br.com.integracao.modelo.Artista;
-import br.com.integracao.modelo.Usuario;
 
 @RestController // tornar essa classe uma controller (responde os metodos HTTP )
 @CrossOrigin("*") //permitir que requisiçoes externas sejam permitidas
@@ -23,7 +22,7 @@ public class ArtistaController {
 	@Autowired  	// JPA ira gerenciar o objeto DAO
 	private ArtistaDAO dao; // um DAO para manupular cada tabel, podemos ter varios dependendo da quantidade de tabela que vamos usar
 	
-	@GetMapping("/artista")
+	@GetMapping("/artistas")
 	public ResponseEntity<List<Artista>> exibirTodos(){
 		List<Artista> lista = (List<Artista>)dao.findAll();
 		if(lista.size() == 0) {
@@ -52,4 +51,26 @@ public class ArtistaController {
 			return ResponseEntity.status(403).build();
 		}
 	}
+	
+	@GetMapping("/nacionalidade/{nac}")
+	public ResponseEntity<List<Artista>> pesquisarNacionalidade(@PathVariable String nac){
+		List<Artista> lista = (List<Artista>) dao.findByNacionalidade(nac);
+		if(lista.size() == 0) {
+			return ResponseEntity.status(404).build();
+		}
+			
+		return ResponseEntity.ok(lista);
+	}
+	
+	@PostMapping("/findnacionalidade")
+	public ResponseEntity<List<Artista>> pesquisaPorNacionalidade(@RequestBody Artista novo){
+		List<Artista> lista = (List<Artista>) dao.findByNacionalidade(novo.getNacionalidade());
+		if(lista.size()==0) {
+			return ResponseEntity.status(404).build();
+		}
+		return ResponseEntity.ok(lista);
+	
+		
+	}
+	
 }

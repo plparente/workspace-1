@@ -68,4 +68,6 @@
 		<item key="updateQualifiedNames" value="false"/>
 		<item key="patterns" value="*"/>
 	</section>
+	<section name="RenameInformationPopup">
+	</section>
 </section>
