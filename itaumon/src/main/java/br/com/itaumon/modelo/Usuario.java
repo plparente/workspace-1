@@ -27,6 +27,17 @@ public class Usuario {
 	
 	@Column(name="senha_usuario")
 	private String senhaUsuario;
+	
+	@Column(name="foto_usuario")
+	private String fotoUsuario;
+	
+	public String getFotoUsuario() {
+		return fotoUsuario;
+	}
+
+	public void setFotoUsuario(String fotoUsuario) {
+		this.fotoUsuario = fotoUsuario;
+	}
 
 	public int getIdUsuario() {
 		return idUsuario;

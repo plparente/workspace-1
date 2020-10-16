@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+    <meta http-equiv="Content-Type" content="text/plan; charset=UTF-8">
+    <link rel="stylesheet" href="..\css\estilo.css">
+<style>
+    p{
+        font-size: 14px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: brown;
+    }
+
+
+
+</style>
+</header>
+<title>Contatos Gama Academy</title>
+
+<body>
+    <table class='tabela' border="0" width="100%">
+        <tr>
+            <td><a href="..\html\index.html" target="blank"><img src="..\imagens\logo.png"></a> </td>
+            <td align="CENTER"><a href="..\html\quemsomos.html" target="blank">QUEM SOMOS</a></td>
+            <td align="CENTER"><a href="..\html\cursoonline.html" target="blank">CURSOS ONLINE</a></td>
+            <td align="CENTER"><a href="..\html\gamaexperience.html" target="blank">GAMA EXPERIENCE</a></td>
+            <td align="CENTER"><a href="..\html\empresas.html" target="blank">EMPRESA</a></td>
+            <td align="CENTER"><a href="..\html\contato.html" target="blank">CONTATO</a></td>
+            <td align="CENTER"><a href="..\html\conteudo.html" target="blank">CONTEUDO</a></td>
+        </tr>
+
+    </table>
+    <h3>Contato</h3>
+
+    <form name="formuser" method="POST">
+        <fieldset>
+            <legend><b>Preencha o nosso contato para se matricular nos cursos da Gama Academy.</b></legend>
+        <label>Nome: </label><input type="text" name="nome_cliente" required><br><br>
+        <label>Email: </label><input type="email" name="email_cliente" required><br><br>
+        <label>Senha: </label><input type="password" name="senha_cliente" required><br><br>
+        <label>Data de Nascimento: </label><input type="date" name="data_nascimento" required><br><br>
+        <label>Escolha o curso desejado: </label><select required>
+            <option value=""></option>
+            <option value="PHP">PHP</option>
+            <option value="CSS">CSS</option>
+            <option value="HTML">HTML</option>
+            <option value="JS">JS</option>
+
+        </select><br><br>
+        
+        <label>Periodos dos Cursos:</label>
+            <input type="checkbox" name="curso" value="op1"> Manhã 
+            <input type="checkbox" name="curso" value="op2"> Tarde
+            <input type="checkbox" name="curso" value="op3"> Noite
+                <br><br>
+        <label>Forma de Pagamentos:</label> 
+        <input type="radio" name="pagamento" value="credito">Credito
+        <input type="radio" name="pagamento" value="debito">Debito
+                <br><br>
+
+        <label>Envio de documento: </label><input type="file" name="arquivo"><br><br>
+        <input type="submit" value="Enviar">
+    </fieldset>
+    </form>
+
+</body>
+
+</html>

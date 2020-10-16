@@ -1,0 +1,55 @@
+    
+ 
+    
+    p{
+        font-size: 14px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: black;
+    }
+    body{
+        background-color: grey;
+    }
+    .tabela{
+        font-size: 15px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: grey;
+        color: gold;
+    }
+
+    .fonte_menu{                            
+        font-size: 14px;
+        font-family: sans-serif;
+        font-weight: bold;
+        color: crimson;
+    }
+    .font_listagem{
+        font-size: 14px;
+        font-family: sans-serif;
+        font-weight: bold;
+        color: darkorchid;
+
+    }
+    .Caixa_texto{
+        font-size: 12px;
+        font-family: 'Courier New', Courier, monospace;
+        color: gold;
+
+        
+    }
+    .container {
+        border: 3px solid brown;
+        width: 500px;
+    }
+    .div1{
+        background-color: red;
+    }
+    .div2{
+        background-color: yellow;
+    }
+    .div3{
+        background-color: grey;
+    }
+    .div4{
+        background-color: green;
+    }

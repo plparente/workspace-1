@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <!-- tag utilizada para converter caracteres    -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet"  href="..\css\estilo.css">
+
+    <script>
+        // window.alert("Seja bem vindos a Página da Gama Academy");
+        /*var empresa="Gama Academy";
+        var separador=" - ";
+        var curso=" Curso de JavaScript";
+        alert("Seja bem vindo a "+empresa+separador+curso);*/
+        //var nome=prompt("Seja bem vindo a Gama Academy, informe o seu nome", "Digite o seu nome");
+        //document.write("Seja bem vindo "+nome);
+        //alert("Seja bem vindo "+nome);
+
+        // Criando uma função em JavaScript
+        function mensagem()
+        {
+            alert("Meu amigo como você é curioso!!!");
+        }
+
+        function validar()
+        {
+            var nome=formulario.nome.value;
+            var email=formulario.email.value;
+            var senha=formulario.senha.value;
+
+            if(nome ==""){
+                alert("Preencha o campo Nome ");
+                formulario.nome.focus();
+                return false;
+            }
+
+                if(email=="" || email.indexOf('@')== -1){
+                    alert("Preencha o email, com um endereço válido");
+                    formulario.email.focus();
+                    return false;
+                }
+
+                if(senha=="" || senha.length <=5){
+                    alert("Prencha o campo senha como no mínimo 6 caracteres");
+                    formulario.senha.focus();
+                    return false;
+                }
+
+        }
+
+
+    </script>    
+
+</header>
+<title>Curso de Java Script</title>
+
+<body>
+    <!-- <input type="button" onclick="mensagem()" value="Me click" /> -->
+    <form name="formulario" method="POST">
+        nome:<input type="text" name="nome"> <br><br>
+        email:<input type="text" name="email"> <br><br>
+        senha:<input type="password" name="senha"> <br><br>
+        <input type="submit" onclick="return validar()" value="enviar" />
+    </form>
+
+</body>
+
+
+</html>

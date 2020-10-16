@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Itaumon - Cadastro de feriados</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="../js/login.js"></script>
+    <script type="text/javascript" src="../js/feriado.js"></script>
+</head>
+
+<body class="text-center">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <div class="row">
+                            <div class="col-3 col-md-1" style="margin-top: 1%;">
+                                <img id="foto-usuario" src="" class="img-thumbnail"/>
+                            </div>
+                            <div class="col-md-7 text-left" style="margin-top: 1%; font-weight: 700;" >
+                                <div>
+                                    <label>Nome:</label>
+                                    <span id="nome"><span/>
+                                    <br/>
+                                    </div>
+                                    <div>
+                                        <label>RACF:</label>
+                                        <span id="racf"><span/>
+                                        <br/>
+                                        </div>
+                                        <div>
+                                            <label>Funcional:</label>
+                                            <span id="funcional"><span/>
+                                            <br/>
+                                            </div>
+                            </div>
+                            <div class="col-md-4" style="margin-top: 2%;">
+                                 
+                                <button type="button" class="btn-lg btn btn-danger" type="button" onclick="logout()">
+                                    <b>Logout</b>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-lg" onclick="window.history.back()">
+                                    <b>Voltar</b>
+                                </button>
+                            </div>
+                        </div>
+                
+                <div class="mt-5">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="operacao.html">Operação</a></li>
+                            <li class="breadcrumb-item"><a href="cadastro-feriado.html" aria-current="page">Cadastro de
+                                    feriados</a></li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="" style="margin-top: 5%;">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6 offset-md-3">
+                        <div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="inputGroupSelect01">Agências</label>
+                                </div>
+                                <select class="custom-select" id="cmbagencias">
+                                </select>
+                            </div>
+                            <br />
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">Feriado</span>
+                                </div>
+                                <input id="feriado" type="text" class="form-control" placeholder="Nome do feriado"
+                                    aria-describedby="basic-addon1">
+                            </div>
+                            <br />
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon2">Data ínicio</span>
+                                </div>
+                                <input id="inicio" type="text" class="form-control" placeholder="Nome do feriado"
+                                    aria-describedby="basic-addon2">
+                            </div>
+                            <br />
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon3">Data fim</span>
+                                </div>
+                                <input id="fim" type="text" class="form-control" placeholder="Nome do feriado"
+                                    aria-describedby="basic-addon3">
+                            </div>
+                            <br />
+                            <div class="row">
+                                <div class="col-md-6 offset-md-3">
+                                    <button type="button" class="btn btn-success btn-lg"
+                                        onclick="cadastrar()">Cadastrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        listarAgencias();
+        carregarUsuario();
+    </script>
+</body>
+
+</html>

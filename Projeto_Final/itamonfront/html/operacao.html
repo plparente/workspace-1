@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+ 
+  <title>Itaumon - Sistema de feriados</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <script type="text/javascript" src="../js/login.js"></script>
+  <script type="text/javascript" src="../js/operacao.js"></script>
+</head>
+
+<body class="text-center">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-3 col-md-1" style="margin-top: 1%;">
+                        <img id="foto-usuario" src="" class="img-thumbnail"/>
+                    </div>
+                    <div class="col-md-7 text-left" style="margin-top: 1%; font-weight: 700;" >
+                        <div>
+                            <label>Nome:</label>
+                            <span id="nome">JEAN<span/>
+                            <br/>
+                            </div>
+                            <div>
+                                <label>RACF:</label>
+                                <span id="racf">JEAN<span/>
+                                <br/>
+                                </div>
+                                <div>
+                                    <label>Funcional:</label>
+                                    <span id="funcional">JEAN<span/>
+                                    <br/>
+                                    </div>
+                    </div>
+                    <div class="col-md-4" style="margin-top: 2%;">
+                         
+                        <button type="button" class="btn-lg btn btn-danger" type="button" onclick="logout()">
+                            <b>Logout</b>
+                        </button>
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item" aria-current="page"><a href="operacao.html">Operação</a></li>
+                        </ol>
+                      </nav>
+                </div>
+                <div class="row col-md-10" style="margin-top: 7%;">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-5">
+                         
+                        <button type="button" class="btn btn-lg btn-block btn-info" onclick="cadastrarFeriado()">
+                            <b>Cadastro<br/>Feriado</b>
+                        </button>
+
+                        
+                    </div>
+                    <div class="col-md-5">
+                        <button type="button" class="btn btn-lg btn-block btn-info" onclick="consultarAgencia()">
+                            <b>Consulta<br/>Agencia</b>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        carregarUsuario();
+    </script>
+</body>
+
+</html>
